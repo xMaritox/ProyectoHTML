@@ -1,0 +1,121 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-image: url(../img/fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: $heading-color;
+}
+
+p {
+  font-family: $font-family;
+  font-size: $larger-font-size;
+  color: $text-color;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.textonegro {
+  color: $text-color;
+}
+
+.textonegro2 {
+  color: $text-color;
+  font-size: x-large;
+  font-family: $larger-heading-font;
+}
+
+.iconoschicos {
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 10px;
+}
+
+.botonReserva {
+  @include button-style;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.social-icons {
+  text-align: left;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.imagenesMultimedia {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.Carrusel {
+  display: block;
+}
+
+.imagenesGeneral {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imagenesRecuerdos {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.textoblanco {
+  color: $heading-color;
+  font-size: x-large;
+  font-family: $larger-heading-font;
+}
+
+.margintop {
+  margin-top: 1%;
+}
+
+.margintoptop {
+  margin-top: 2%;
+}
+
+.imgbanner {
+  margin: middle;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.imagenNovedades {
+  margin: middle;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
